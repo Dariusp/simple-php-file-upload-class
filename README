@@ -1,0 +1,16 @@
+simple example how use it
+
+
+include ('ImageUpload.class.php')
+           
+$oFileUpload = new ImageUpload($_FILES);
+$dir = $_SERVER['DOCUMENT_ROOT'].'uploads/';
+if ($oFileUpload->createDirIfNotExists($dir)){
+	$rezult = $oFileUpload->saveTo($dir);
+	if ($rezult==FileUpload::UPLOAD_OK){
+               echo "ok";
+     	}
+}
+
+                  
+                
