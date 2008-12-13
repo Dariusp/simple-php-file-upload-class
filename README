@@ -1,7 +1,7 @@
 simple example how use it
 
-
-include ('ImageUpload.class.php')
+include ('FileUpload.class.php');
+include ('ImageUpload.class.php');
            
 $oFileUpload = new ImageUpload($_FILES);
 $dir = $_SERVER['DOCUMENT_ROOT'].'uploads/';
